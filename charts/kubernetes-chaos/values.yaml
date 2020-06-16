@@ -47,4 +47,4 @@ image:
   litmusContainerKillHelper:
     repository: litmuschaos/container-kill-helper
     tag: latest
-    libName: litmus
+    libName: containerd
