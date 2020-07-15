@@ -34,11 +34,11 @@ spec:
           - "update"
           - "patch"
           - "delete"
-    image: "{{ .Values.image.litmus.repository }}:{{ .Values.image.litmus.tag }}"
-    imagePullPolicy: {{ .Values.image.litmus.pullPolicy }}
+    image: "{{ .Values.image.litmusGO.repository }}:{{ .Values.image.litmusGO.tag }}"
+    imagePullPolicy: {{ .Values.image.litmusGO.pullPolicy }}
     args:
     - -c
-    - ansible-playbook ./experiments/generic/container_kill/container_kill_ansible_logic.yml -i /etc/ansible/hosts -vv; exit 0
+    - ./experiments/container-kill
     command:
     - /bin/bash
     env:

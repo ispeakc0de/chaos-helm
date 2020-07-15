@@ -32,11 +32,11 @@ spec:
           - "patch"
           - "update"
           - "delete"
-    image: "{{ .Values.image.litmus.repository }}:{{ .Values.image.litmus.tag }}"
-    imagePullPolicy: {{ .Values.image.litmus.pullPolicy }}
+    image: "{{ .Values.image.litmusGO.repository }}:{{ .Values.image.litmusGO.tag }}"
+    imagePullPolicy: {{ .Values.image.litmusGO.pullPolicy }}
     args:
     - -c
-    - ansible-playbook ./experiments/generic/pod_memory_hog/pod_memory_hog_ansible_logic.yml -i /etc/ansible/hosts -vv; exit 0
+    - ./experiments/pod-memory-hog
     command:
     - /bin/bash
     env:

@@ -11,6 +11,11 @@ image:
     tag: 1.6.0
     pullPolicy: Always
 
+  litmusGo:
+    repository: litmuschaos/go-runner
+    tag: 1.6.0
+    pullPolicy: Always
+
   pumba:
     repository: gaiaadm/pumba
     tag: 0.6.5

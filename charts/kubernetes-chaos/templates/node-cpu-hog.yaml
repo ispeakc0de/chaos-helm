@@ -40,11 +40,11 @@ spec:
         verbs :
           - "get"
           - "list"
-    image: "{{ .Values.image.litmus.repository }}:{{ .Values.image.litmus.tag }}" 
-    imagePullPolicy: {{ .Values.image.litmus.pullPolicy }}
+    image: "{{ .Values.image.litmusGO.repository }}:{{ .Values.image.litmusGO.tag }}" 
+    imagePullPolicy: {{ .Values.image.litmusGO.pullPolicy }}
     args:
     - -c
-    - ansible-playbook ./experiments/generic/node_cpu_hog/node_cpu_hog_ansible_logic.yml -i /etc/ansible/hosts -vv; exit 0
+    - ./experiments/node-cpu-hog
     command:
     - /bin/bash
     env:
