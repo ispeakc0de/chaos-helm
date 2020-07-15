@@ -31,7 +31,7 @@ k8s-chaos     https://litmuschaos.github.io/chaos-helm/
 ```
 root@demo:~# helm search repo k8s-chaos
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
-k8s-chaos/kubernetes-chaos      1.2.0           1.2.0           A Helm chart to install litmus chaos experiment...
+k8s-chaos/kubernetes-chaos      1.6.0           1.6.0           A Helm chart to install litmus chaos experiment...
 ```
 
 ### Step-2: Create the litmus namespace 
