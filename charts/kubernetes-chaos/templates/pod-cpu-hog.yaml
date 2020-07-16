@@ -21,6 +21,7 @@ spec:
           - "jobs"
           - "pods"
           - "pods/log"
+          - "pods/exec"
           - "events"
           - "chaosengines"
           - "chaosexperiments"

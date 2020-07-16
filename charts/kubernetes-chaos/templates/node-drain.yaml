@@ -16,6 +16,7 @@ spec:
     permissions:
       - apiGroups:
           - ""
+          - "apps"
           - "batch"
           - "extensions"
           - "litmuschaos.io"

@@ -43,6 +43,7 @@ spec:
           - "get"
           - "list"
           - "patch"
+          - "update"
     image: "{{ .Values.image.litmusGO.repository }}:{{ .Values.image.litmusGO.tag }}"
     imagePullPolicy: {{ .Values.image.litmusGO.pullPolicy }}
     args:
