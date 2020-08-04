@@ -48,7 +48,7 @@ spec:
     command:
     - /bin/bash
     env:
-   
+
     - name: TOTAL_CHAOS_DURATION
       value: '90' # in seconds
 
